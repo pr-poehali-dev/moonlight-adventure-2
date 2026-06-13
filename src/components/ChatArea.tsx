@@ -9,7 +9,7 @@ interface Props {
 const ChatArea = ({ setMobileSidebarOpen }: Props) => (
   <div className="flex-1 flex flex-col">
     {/* Заголовок чата */}
-    <div className="h-12 bg-[#36393f] border-b border-[#202225] flex items-center px-4 gap-2">
+    <div className="">
       <Button
         variant="ghost"
         className="lg:hidden text-[#8e9297] hover:text-[#dcddde] hover:bg-[#40444b] p-1 mr-2"

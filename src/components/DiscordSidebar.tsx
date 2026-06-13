@@ -76,12 +76,10 @@ const DiscordSidebar = ({ mobileSidebarOpen, setMobileSidebarOpen }: Props) => (
       </div>
       {/* Пользователь */}
       <div className="p-2 bg-[#292b2f] flex items-center gap-2">
-        <div className="w-8 h-8 bg-[#5865f2] rounded-full flex items-center justify-center text-base">
-          😂
-        </div>
+        <div className=""></div>
         <div className="flex-1 min-w-0">
-          <div className="text-white text-sm font-medium truncate">ЯЛЮ-Бот</div>
-          <div className="text-[#b9bbbe] text-xs truncate">всегда в сети</div>
+          <div className="text-white text-sm font-medium truncate"></div>
+          <div className="text-[#b9bbbe] text-xs truncate"></div>
         </div>
         <div className="flex gap-1">
           <Button variant="ghost" size="sm" className="w-8 h-8 p-0 hover:bg-[#40444b]">

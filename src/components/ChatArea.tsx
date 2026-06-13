@@ -57,61 +57,53 @@ const ChatArea = ({ setMobileSidebarOpen }: Props) => (
       {/* Сообщение победителя */}
       <div className="">
         <div className="">
-          <span className="text-white text-xs sm:text-sm font-medium">К</span>
+          <span className="text-white text-xs sm:text-sm font-medium"></span>
         </div>
         <div className="flex-1 min-w-0">
           <div className="">
             <span className=""></span>
-            <span className="text-[#72767d] text-xs hidden sm:inline">Сегодня в 12:05</span>
+            <span className="text-[#72767d] text-xs hidden sm:inline"></span>
           </div>
-          <div className="text-[#dcddde] mb-3 text-sm sm:text-base">
-            Не могу поверить, что выиграла в розыгрыше!! Спасибо огромное! 🎉
-          </div>
+          <div className="text-[#dcddde] mb-3 text-sm sm:text-base"></div>
 
           {/* Карточка приза */}
           <div className="bg-[#2f3136] border border-[#faa61a] rounded-lg overflow-hidden w-full max-w-sm">
             <div className="h-16 sm:h-20 bg-gradient-to-r from-[#faa61a] to-[#f5733a] relative flex items-center justify-center">
-              <span className="text-4xl">🎁</span>
+              <span className="text-4xl"></span>
             </div>
             <div className="pt-4 sm:pt-5 px-3 sm:px-4 pb-3 sm:pb-4">
               <div className="mb-3 sm:mb-4">
-                <h3 className="text-white text-lg sm:text-xl font-bold mb-1">Катерина</h3>
+                <h3 className="text-white text-lg sm:text-xl font-bold mb-1"></h3>
                 <div className="flex items-center gap-2 text-[#faa61a] text-xs sm:text-sm font-semibold">
                   <Trophy className="w-4 h-4" />
-                  <span>Победитель розыгрыша недели!</span>
+                  <span></span>
                 </div>
               </div>
               <div className="mb-3 sm:mb-4">
                 <div className="bg-[#36393f] rounded-lg p-2 sm:p-3">
                   <div className="flex items-center gap-2 text-[#dcddde] text-xs sm:text-sm">
                     <Gift className="w-4 h-4 text-[#faa61a]" />
-                    <span>Приз: Airpods Pro 2-го поколения</span>
+                    <span></span>
                   </div>
                 </div>
               </div>
               <div className="flex border-b border-[#40444b] mb-3 sm:mb-4">
-                <button className="px-3 sm:px-4 py-2 text-[#8e9297] text-xs sm:text-sm font-medium hover:text-[#dcddde]">
-                  Профиль
-                </button>
-                <button className="px-3 sm:px-4 py-2 text-white text-xs sm:text-sm font-medium border-b-2 border-[#faa61a]">
-                  Победа
-                </button>
+                <button className="px-3 sm:px-4 py-2 text-[#8e9297] text-xs sm:text-sm font-medium hover:text-[#dcddde]"></button>
+                <button className="px-3 sm:px-4 py-2 text-white text-xs sm:text-sm font-medium border-b-2 border-[#faa61a]"></button>
               </div>
               <div>
                 <div className="flex items-center gap-2 text-[#8e9297] text-xs font-semibold uppercase tracking-wide mb-2 sm:mb-3">
-                  <span>Статус розыгрыша</span>
+                  <span></span>
                 </div>
                 <div className="">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[#faa61a] to-[#f5733a] rounded-lg flex items-center justify-center flex-shrink-0 text-2xl">
-                    🏆
-                  </div>
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[#faa61a] to-[#f5733a] rounded-lg flex items-center justify-center flex-shrink-0 text-2xl"></div>
                   <div className="flex-1 min-w-0">
-                    <div className="text-white font-semibold text-xs sm:text-sm mb-1">Я Люблю Юмор</div>
-                    <div className="text-[#dcddde] text-xs sm:text-sm mb-1">Розыгрыш Airpods Pro</div>
-                    <div className="text-[#b9bbbe] text-xs sm:text-sm mb-2">Еженедельный приз</div>
+                    <div className="text-white font-semibold text-xs sm:text-sm mb-1"></div>
+                    <div className="text-[#dcddde] text-xs sm:text-sm mb-1"></div>
+                    <div className="text-[#b9bbbe] text-xs sm:text-sm mb-2"></div>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-[#faa61a] rounded-full animate-pulse"></div>
-                      <span className="text-[#faa61a] text-xs font-medium">Победитель выбран!</span>
+                      <span className="text-[#faa61a] text-xs font-medium"></span>
                     </div>
                   </div>
                 </div>
@@ -123,7 +115,7 @@ const ChatArea = ({ setMobileSidebarOpen }: Props) => (
 
       {/* Ещё одно сообщение */}
       <div className="flex gap-2 sm:gap-4">
-        <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
+        <div className="">
           <span className="text-white text-xs sm:text-sm font-medium">Д</span>
         </div>
         <div className="flex-1 min-w-0">

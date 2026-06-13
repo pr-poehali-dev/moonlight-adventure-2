@@ -67,7 +67,7 @@ const ChatArea = ({ setMobileSidebarOpen }: Props) => (
           <div className="text-[#dcddde] mb-3 text-sm sm:text-base"></div>
 
           {/* Карточка приза */}
-          <div className="bg-[#2f3136] border border-[#faa61a] rounded-lg overflow-hidden w-full max-w-sm">
+          <div className="">
             <div className="">
               <span className="text-4xl"></span>
             </div>

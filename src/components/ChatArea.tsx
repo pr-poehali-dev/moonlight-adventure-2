@@ -80,7 +80,7 @@ const ChatArea = ({ setMobileSidebarOpen }: Props) => (
                 </div>
               </div>
               <div className="mb-3 sm:mb-4">
-                <div className="bg-[#36393f] rounded-lg p-2 sm:p-3">
+                <div className="">
                   <div className="flex items-center gap-2 text-[#dcddde] text-xs sm:text-sm">
                     <Gift className="w-4 h-4 text-[#faa61a]" />
                     <span></span>

@@ -138,7 +138,7 @@ const ChatArea = ({ setMobileSidebarOpen }: Props) => (
       </div>
 
       {/* CTA блок */}
-      <div className="bg-[#2f3136] border border-[#202225] rounded-lg p-4 sm:p-6">
+      <div className="">
         <div className="flex items-center gap-2 text-[#faa61a] text-xs font-semibold uppercase tracking-wide mb-3 sm:mb-4">
           <Star className="w-4 h-4" />
           <span>Следующий розыгрыш</span>

@@ -61,7 +61,7 @@ const ChatArea = ({ setMobileSidebarOpen }: Props) => (
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-baseline gap-2 mb-1">
-            <span className="">Катя 🏆</span>
+            <span className=""></span>
             <span className="text-[#72767d] text-xs hidden sm:inline">Сегодня в 12:05</span>
           </div>
           <div className="text-[#dcddde] mb-3 text-sm sm:text-base">

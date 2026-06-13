@@ -21,7 +21,7 @@ const ChatArea = ({ setMobileSidebarOpen }: Props) => (
       <span className="text-white font-semibold"></span>
       <div className="w-px h-6 bg-[#40444b] mx-2 hidden sm:block"></div>
       <span className="text-[#8e9297] text-sm hidden sm:block"></span>
-      <div className="ml-auto flex items-center gap-2 sm:gap-4">
+      <div className="">
         <Bell className="w-4 h-4 sm:w-5 sm:h-5 text-[#b9bbbe] cursor-pointer hover:text-[#dcddde]" />
         <Users className="w-4 h-4 sm:w-5 sm:h-5 text-[#b9bbbe] cursor-pointer hover:text-[#dcddde]" />
         <Search className="w-4 h-4 sm:w-5 sm:h-5 text-[#b9bbbe] cursor-pointer hover:text-[#dcddde]" />

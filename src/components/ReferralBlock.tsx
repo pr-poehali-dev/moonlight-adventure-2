@@ -2,11 +2,13 @@ import { useState } from "react";
 import { Trophy, Copy, Check, Link2, LogIn, UserPlus, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import GnomeCards from "@/components/GnomeCards";
 
 const REFERRAL_URL = "https://functions.poehali.dev/acab6c47-e091-4dc5-8cfc-71d8464ebf65";
 
 type UserData = {
   username: string;
+  email?: string;
   ref_code: string;
   points: number;
   invites: number;
@@ -29,6 +31,7 @@ const ReferralBlock = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [user, setUser] = useState<UserData | null>(null);
+  const [sessionPassword, setSessionPassword] = useState("");
   const [copied, setCopied] = useState(false);
   const [topUsers, setTopUsers] = useState<{ username: string; points: number; invites: number }[]>([]);
   const [topLoaded, setTopLoaded] = useState(false);
@@ -61,7 +64,8 @@ const ReferralBlock = () => {
       });
       const data = JSON.parse(await res.text());
       if (data.status === "created") {
-        setUser({ username: refName.trim(), ref_code: data.ref_code, points: 0, invites: 0, message: data.message });
+        setUser({ username: refName.trim(), email: refEmail.trim(), ref_code: data.ref_code, points: 0, invites: 0, message: data.message });
+        setSessionPassword(refPassword.trim());
         loadTop();
       } else if (data.status === "exists") {
         setError("Email уже зарегистрирован — войдите в аккаунт.");
@@ -88,7 +92,8 @@ const ReferralBlock = () => {
       });
       const data = JSON.parse(await res.text());
       if (data.status === "ok") {
-        setUser(data);
+        setUser({ ...data, email: loginEmail.trim() });
+        setSessionPassword(loginPassword.trim());
         loadTop();
       } else {
         setError(data.error || "Неверный email или пароль");
@@ -109,6 +114,7 @@ const ReferralBlock = () => {
 
   const handleLogout = () => {
     setUser(null);
+    setSessionPassword("");
     setLoginEmail("");
     setLoginPassword("");
     setError("");
@@ -205,6 +211,13 @@ const ReferralBlock = () => {
               </div>
             </div>
           )}
+
+          <GnomeCards
+            userEmail={user.email ?? ""}
+            userPassword={sessionPassword}
+            userPoints={user.points}
+            onPointsChange={(pts) => setUser((u) => u ? { ...u, points: pts } : u)}
+          />
         </div>
       ) : (
         <div className="space-y-4">

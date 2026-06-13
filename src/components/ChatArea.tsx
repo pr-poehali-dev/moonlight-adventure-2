@@ -55,7 +55,7 @@ const ChatArea = ({ setMobileSidebarOpen }: Props) => (
       </div>
 
       {/* Сообщение победителя */}
-      <div className="flex gap-2 sm:gap-4">
+      <div className="">
         <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
           <span className="text-white text-xs sm:text-sm font-medium">К</span>
         </div>

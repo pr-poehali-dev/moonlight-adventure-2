@@ -9,7 +9,7 @@ interface Props {
 
 const DiscordNav = ({ mobileMenuOpen, setMobileMenuOpen }: Props) => (
   <nav className="bg-[#2f3136] border-b border-[#202225] px-4 sm:px-6 py-4">
-    <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <div className="">
       <div className="flex items-center gap-3 sm:gap-4">
         <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#5865f2] rounded-full flex items-center justify-center text-lg">
           😂

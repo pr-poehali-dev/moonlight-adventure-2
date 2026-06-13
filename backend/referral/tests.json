@@ -12,6 +12,20 @@
       "path": "/",
       "body": {},
       "expectedStatus": 400
+    },
+    {
+      "name": "Вход с неверным паролем — ошибка 401",
+      "method": "POST",
+      "path": "/?action=login",
+      "body": {"email": "nobody@example.com", "password": "wrongpass"},
+      "expectedStatus": 401
+    },
+    {
+      "name": "Вход без данных — ошибка 400",
+      "method": "POST",
+      "path": "/?action=login",
+      "body": {},
+      "expectedStatus": 400
     }
   ]
 }

@@ -59,7 +59,7 @@ const ChatArea = ({ setMobileSidebarOpen }: Props) => (
         <div className="">
           <span className="text-white text-xs sm:text-sm font-medium"></span>
         </div>
-        <div className="flex-1 min-w-0">
+        <div className="">
           <div className="">
             <span className=""></span>
             <span className="text-[#72767d] text-xs hidden sm:inline"></span>
@@ -131,7 +131,7 @@ const ChatArea = ({ setMobileSidebarOpen }: Props) => (
       <div className="">
         <div className="flex items-center gap-2 text-[#faa61a] text-xs font-semibold uppercase tracking-wide mb-3 sm:mb-4">
           <Star className="w-4 h-4" />
-          <span>Следующий розыгрыш</span>
+          <span></span>
         </div>
         <h2 className="text-white text-xl sm:text-2xl font-bold mb-2"></h2>
         <p className="text-[#b9bbbe] text-sm sm:text-base mb-4 sm:mb-6"></p>

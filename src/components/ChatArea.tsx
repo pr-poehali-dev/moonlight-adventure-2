@@ -18,9 +18,9 @@ const ChatArea = ({ setMobileSidebarOpen }: Props) => (
         <Menu className="w-5 h-5" />
       </Button>
       <Hash className="w-5 h-5 text-[#8e9297]" />
-      <span className="text-white font-semibold">розыгрыши</span>
+      <span className="text-white font-semibold"></span>
       <div className="w-px h-6 bg-[#40444b] mx-2 hidden sm:block"></div>
-      <span className="text-[#8e9297] text-sm hidden sm:block">Участвуй — выигрывай крутые призы!</span>
+      <span className="text-[#8e9297] text-sm hidden sm:block"></span>
       <div className="ml-auto flex items-center gap-2 sm:gap-4">
         <Bell className="w-4 h-4 sm:w-5 sm:h-5 text-[#b9bbbe] cursor-pointer hover:text-[#dcddde]" />
         <Users className="w-4 h-4 sm:w-5 sm:h-5 text-[#b9bbbe] cursor-pointer hover:text-[#dcddde]" />
@@ -31,27 +31,23 @@ const ChatArea = ({ setMobileSidebarOpen }: Props) => (
     {/* Сообщения чата */}
     <div className="flex-1 p-2 sm:p-4 space-y-4 sm:space-y-6 overflow-y-auto">
       {/* Приветственное сообщение */}
-      <div className="flex gap-2 sm:gap-4">
-        <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#5865f2] rounded-full flex items-center justify-center flex-shrink-0 text-lg">
-          😂
-        </div>
+      <div className="">
+        <div className="bg-slate-500"></div>
         <div className="flex-1 min-w-0">
           <div className="flex items-baseline gap-2 mb-1">
-            <span className="text-white font-medium text-sm sm:text-base">ЯЛЮ-Бот</span>
-            <span className="text-[#72767d] text-xs hidden sm:inline">Сегодня в 10:00</span>
+            <span className="text-white font-medium text-sm sm:text-base"></span>
+            <span className="text-[#72767d] text-xs hidden sm:inline"></span>
           </div>
           <div className="text-[#dcddde] text-sm sm:text-base">
-            <p className="mb-3 sm:mb-4">
-              <strong>Добро пожаловать в Я Люблю Юмор!</strong> Здесь весело, тут дают призы и каждый найдёт своё.
-            </p>
-            <div className="bg-[#2f3136] border-l-4 border-[#5865f2] p-3 sm:p-4 rounded">
-              <h3 className="text-white font-semibold mb-2 text-sm sm:text-base">Что тебя ждёт:</h3>
+            <p className="mb-3 sm:mb-4"></p>
+            <div className="bg-[#2f3136] border-l-4 border-[#5865f2] p-3 sm:p-4 rounded rounded-0">
+              <h3 className="text-white font-semibold mb-2 text-sm sm:text-base"></h3>
               <ul className="space-y-1 text-xs sm:text-sm text-[#b9bbbe]">
-                <li>🎭 Лучшие мемы и юмор каждый день</li>
-                <li>🎁 Регулярные розыгрыши с крутыми призами</li>
-                <li>🏆 Конкурсы и испытания для подписчиков</li>
-                <li>💬 Живое общение с единомышленниками</li>
-                <li>🔔 Уведомления о новых розыгрышах первым</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
               </ul>
             </div>
           </div>

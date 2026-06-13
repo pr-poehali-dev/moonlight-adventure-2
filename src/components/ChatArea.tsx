@@ -101,7 +101,7 @@ const ChatArea = ({ setMobileSidebarOpen }: Props) => (
                 <div className="flex items-center gap-2 text-[#8e9297] text-xs font-semibold uppercase tracking-wide mb-2 sm:mb-3">
                   <span>Статус розыгрыша</span>
                 </div>
-                <div className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 bg-[#36393f] rounded-lg">
+                <div className="">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[#faa61a] to-[#f5733a] rounded-lg flex items-center justify-center flex-shrink-0 text-2xl">
                     🏆
                   </div>
@@ -128,12 +128,10 @@ const ChatArea = ({ setMobileSidebarOpen }: Props) => (
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-baseline gap-2 mb-1">
-            <span className="text-white font-medium text-sm sm:text-base">Дима 😂</span>
-            <span className="text-[#72767d] text-xs hidden sm:inline">Сегодня в 12:08</span>
+            <span className="text-white font-medium text-sm sm:text-base"></span>
+            <span className="text-[#72767d] text-xs hidden sm:inline"></span>
           </div>
-          <div className="text-[#dcddde] text-sm sm:text-base">
-            Вы видели мем про понедельник? 😹 Надо добавить в #юмор!
-          </div>
+          <div className="text-[#dcddde] text-sm sm:text-base"></div>
         </div>
       </div>
 
@@ -143,19 +141,11 @@ const ChatArea = ({ setMobileSidebarOpen }: Props) => (
           <Star className="w-4 h-4" />
           <span>Следующий розыгрыш</span>
         </div>
-        <h2 className="text-white text-xl sm:text-2xl font-bold mb-2">
-          Вступай — участвуй — побеждай! 🎉
-        </h2>
-        <p className="text-[#b9bbbe] text-sm sm:text-base mb-4 sm:mb-6">
-          Каждую неделю разыгрываем крутые призы среди участников сообщества. Чем активнее — тем больше шансов!
-        </p>
+        <h2 className="text-white text-xl sm:text-2xl font-bold mb-2"></h2>
+        <p className="text-[#b9bbbe] text-sm sm:text-base mb-4 sm:mb-6"></p>
         <div className="flex flex-col sm:flex-row gap-3 mb-4 sm:mb-6">
-          <Button className="bg-[#5865f2] hover:bg-[#4752c4] text-white px-6 py-2 rounded text-sm font-medium">
-            🎁 Участвовать в розыгрыше
-          </Button>
-          <Button variant="ghost" className="text-[#b9bbbe] hover:text-white hover:bg-[#40444b] border border-[#40444b]">
-            💬 Вступить в сообщество
-          </Button>
+          <Button className="bg-[#5865f2] hover:bg-[#4752c4] text-white px-6 py-2 rounded text-sm font-medium"></Button>
+          <Button variant="ghost" className="text-[#b9bbbe] hover:text-white hover:bg-[#40444b] border border-[#40444b]"></Button>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3">
           {[
